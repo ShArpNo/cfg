@@ -57,7 +57,7 @@
   ```
   
   Set the flag showUntrackedFiles to no on this specific (local) repository:
-  """bash
+  ```bash
   config config --local status.showUntrackedFiles no
-  """
+  ```
   
