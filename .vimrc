@@ -12,8 +12,8 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum" " Fix colors
 
 call plug#begin()
 " Themes
-"Plug 'gruvbox-community/gruvbox' " gruvbox theme
-Plug 'catppuccin/vim', { 'as': 'catppuccin' } " catppuccin theme
+Plug 'gruvbox-community/gruvbox' " gruvbox theme
+"Plug 'catppuccin/vim', { 'as': 'catppuccin' } " catppuccin theme
 "Plug 'joshdick/onedark.vim' " onedark theme
 "Plug 'nordtheme/vim' " nord theme
 
@@ -22,8 +22,8 @@ Plug 'vim-airline/vim-airline-themes'
 "coc_edit:Plug 'neoclide/coc.nvim' " Syntax hightlight and autosuggestions
 call plug#end()
 
-"set background=dark
-colorscheme catppuccin_mocha
+set background=dark
+colorscheme gruvbox
 
 "Autocomplition
 "coc_edit:set encoding=utf-8
@@ -32,8 +32,6 @@ colorscheme catppuccin_mocha
 "coc_edit:set updatetime=300
 
 " Airline
-let g:airline_theme = 'catppuccin_mocha'
-
 let g:airline_powerline_fonts = 1
 
 " Netrw
