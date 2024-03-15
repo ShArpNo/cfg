@@ -1,11 +1,14 @@
 # All my dotfiles in this repository.
 
-
-
-
 ## Installing dotfiles onto a new system:
-
-
+  
+  ### Using script
+  Install .cfg/autosetup.sh
+  ```bash
+  chmod +x autosetup.sh && \
+  ./autosetup.sh
+  ```
+  
   ### *Manualy*
 
   Add this to .bashrc or .zsh:
