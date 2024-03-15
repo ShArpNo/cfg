@@ -1,0 +1,6 @@
+set selection-clipboard clipboard
+map D toggle_page_mode
+map K zoom in
+map J zoom out
+map i recolor
+map p print
