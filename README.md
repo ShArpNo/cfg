@@ -1,9 +1,9 @@
-#All my dotfiles in this repository.
+# All my dotfiles in this repository.
 
 
 
 
-##Installing dotfiles onto a new system:
+## Installing dotfiles onto a new system:
 
   Add this to .bashrc or .zsh:
   """bash
