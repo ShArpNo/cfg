@@ -42,12 +42,14 @@
   Aborting
   ```
 
-  This is because your $HOME folder might already have some stock configuration files which would be overwritten by Git.  
-  The solution is simple: back up the files if you care about them, remove them if you don't care.  
-  I provide you with a possible rough shortcut to move all the offending files automatically to a backup folder:
+  This is because your $HOME folder might already have some stock configuration files which would be overwritten by Git.
+  The solution is simple: back up the files if you care about them, remove them if you don't care.
+  Possible rough shortcut to move all the offending files automatically to a backup folder:
+  ```bash
   mkdir -p .config-backup && \
   config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
   xargs -I{} mv {} .config-backup/{}
+  ```
   
   Re-run the check out if you had problems:
   ```bash
