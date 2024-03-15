@@ -6,7 +6,8 @@
 ## Installing dotfiles onto a new system:
 
 
-  * Manualy:
+  ### *Manualy*
+
   Add this to .bashrc or .zsh:
   ```bash
   alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
