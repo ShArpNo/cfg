@@ -76,6 +76,7 @@ static const char *volupcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmut
 static const char *voldowncmd[] = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
 
 static const char *flamecmd[] = {"flameshot", "gui", NULL}; // screenshot
+static const char *slockcmd[] = {"slock", NULL}; // slock
 //
 
 static const Key keys[] = {
@@ -119,6 +120,8 @@ static const Key keys[] = {
   { 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
   // Screenshot
   { 0,                       XK_Print, spawn, {.v = flamecmd   } },
+  // Lock
+	{ MODKEY|ShiftMask,        XK_l,     spawn, {.v = slockcmd   } },
 };
 
 /* button definitions */
