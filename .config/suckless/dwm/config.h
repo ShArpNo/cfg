@@ -12,8 +12,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Fira Code:size=10" };
-static const char dmenufont[]       = "Fira Code:size=10";
+static const char *fonts[]          = { "Fira Code:size=13" };
+static const char dmenufont[]       = "Fira Code:size=13";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -75,6 +75,9 @@ static const char *mutecmd[] = { "amixer", "-q", "set", "Master", "toggle", NULL
 static const char *volupcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
 static const char *voldowncmd[] = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
 
+static const char *brightness_up[]    = {"brightnessctl", "set", "+5%", NULL };
+static const char *brightness_down[]  = {"brightnessctl", "set", "5%-", NULL };
+
 static const char *flamecmd[] = {"flameshot", "gui", NULL}; // screenshot
 static const char *slockcmd[] = {"slock", NULL}; // slock
 //
@@ -118,10 +121,13 @@ static const Key keys[] = {
   { 0, XF86XK_AudioMute, spawn, {.v = mutecmd } },
   { 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
   { 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
+  // Brightness control
+  { 0, XF86XK_MonBrightnessUp,  spawn, {.v = brightness_up } },
+  { 0, XF86XK_MonBrightnessDown, spawn, {.v = brightness_down } },
   // Screenshot
-  { 0,                       XK_Print, spawn, {.v = flamecmd   } },
+  { 0, XK_Print, spawn, {.v = flamecmd } },
   // Lock
-	{ MODKEY|ShiftMask,        XK_l,     spawn, {.v = slockcmd   } },
+	{ MODKEY|ShiftMask, XK_l, spawn, {.v = slockcmd } },
 };
 
 /* button definitions */

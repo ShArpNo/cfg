@@ -1,6 +1,6 @@
 xrandr --output HDMI-0 --mode 1920x1080 &
 setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
-feh --bg-fill $HOME/wallpapers/gruv-material.png &
+feh --bg-fill $HOME/wallpapers/future-town.jpg &
 xautolock -time 10 -locker slock &
 dwmblocks &
 ibus exit

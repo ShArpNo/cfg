@@ -4,7 +4,7 @@ online=$(nm-online -t 1 | cut -d "[" -f2 | cut -d "]" -f1)
 
 if [ $online = "online" ]
 then
-  echo $(nmcli connection show --active | sed -n '2p' | cut -d " " -f1);
+  echo $(nmcli connection show --active | sed -n '2p' | cut -d " " -f1 | cut -c -15);
 else
-  echo "net: Off"
+  echo "Off"
 fi
