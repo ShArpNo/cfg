@@ -2,9 +2,10 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{" MEM: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-	{"LANG: ", "xkb-switch",	2,		10},
-  {"VOL: ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1", 2, 10},
-  {"", "date '+%a %d %b %Y'", 20, 0},
+	{"", "xkb-switch | awk '{print toupper($0)}'",	1,		0},
+  {"VOL: ", "$HOME/.config/suckless/dwmblocks/scripts/volume.sh", 1, 0},
+  {"NET: ", "$HOME/.config/suckless/dwmblocks/scripts/network.sh", 1, 0},
+  {"", "date '+%a %d %b %Y'", 15, 0},
   {"", "date '+%T '", 1, 0},
 };
 
