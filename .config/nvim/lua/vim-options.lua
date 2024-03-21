@@ -23,3 +23,6 @@ vim.opt.updatetime = 50
 
 vim.g.netrw_banner = 0 -- disable top help menu
 vim.g.netrw_liststyle = 3
+
+-- Change color of left light grey bar for gruvbox
+vim.g.gruvbox_sign_column = 'bg0'
