@@ -19,6 +19,8 @@ Plug 'gruvbox-community/gruvbox' " gruvbox theme
 
 Plug 'vim-airline/vim-airline' " airline
 Plug 'vim-airline/vim-airline-themes'
+
+Plug 'christoomey/vim-tmux-navigator'
 "coc_edit:Plug 'neoclide/coc.nvim' " Syntax hightlight and autosuggestions
 call plug#end()
 
