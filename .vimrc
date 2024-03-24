@@ -1,6 +1,6 @@
 syntax on
 filetype plugin indent on
-set ts=2 sts=2 sw=2 et ai si " Tab spaces
+set ts=4 sts=4 sw=4 et ai si " Tab spaces
 set rnu " relative numbers
 set nu
 set incsearch
