@@ -43,7 +43,7 @@ mkfs.ext4 "${DISK}2"
 echo
 echo 'Mounting filesystems'
 mount "${DISK}2" /mnt
-mount --mkdir "${DISK}2" /mnt/boot
+mount --mkdir "${DISK}1" /mnt/boot
 
 echo
 echo 'Installing base system'
