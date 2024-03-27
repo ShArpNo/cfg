@@ -16,7 +16,7 @@ sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 echo
 echo "Enter hostname:"
 read hostname
-cat $hostname > /etc/hostname
+echo $hostname > /etc/hostname
 
 echo
 echo 'Setup root passwd:'
