@@ -1,3 +1,12 @@
+#!/usr/bin/env bash
+#      ____       _               
+#     / ___|  ___| |_ _   _ _ __  
+#     \___ \ / _ \ __| | | | '_ \ 
+#      ___) |  __/ |_| |_| | |_) |
+#     |____/ \___|\__|\__,_| .__/ 
+#                          |_|    
+
+
 ls /usr/share/zoneinfo
 echo "Choose region: "
 read REGION
@@ -34,7 +43,7 @@ passwd $username
 echo
 echo 'Remove comment here:'
 echo '%sudo ALL=(ALL:ALL) ALL'
-read "Press enter to continue"
+read -p "Press enter to continue"
 EDITOR=vim visudo
 
 echo
@@ -52,7 +61,6 @@ PKGS=(
     # Base setup
     'xorg'
     'xorg-init'
-    'xterm'
     'mesa'
     
     # Usefull packages
