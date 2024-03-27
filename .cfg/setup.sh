@@ -54,6 +54,9 @@ systemctl enable NetworkManager
 
 echo
 echo 'Installing grub'
+lsblk
+echo 'Choose your disk (e.g. /dev/sda): '
+read DISK
 grub-install ${DISK}
 grub-mkconfig -o /boot/grub/grub.cfg
 

@@ -12,7 +12,7 @@ timedatectl
 
 pacman -S --noconfirm gptfdisk
 
-fdisk -l
+lsblk
 echo 'Enter disk to format (e.g. /dev/sda): '
 read DISK
 
