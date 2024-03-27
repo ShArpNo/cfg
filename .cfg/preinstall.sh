@@ -5,6 +5,8 @@
 #     |  __/| | |  __/ | | | \__ \ || (_| | | |
 #     |_|   |_|  \___|_|_| |_|___/\__\__,_|_|_|
                                               
+echo "Check inet connetion before installing"
+read -p "Press enter to continue"
 
 timedatectl
 
