@@ -9,6 +9,14 @@ PKGS=(
     'git'
     'wget'
     'curl'
+    'alsa-utils'
+    'alsa-firmware'
+    'zip'
+    'unzip'
+    'cmake'
+    'net-tools'
+    'xdg-user-dirs'
+    'brightnessctl'
 
     # Additional packages
     'firefox'
@@ -29,6 +37,7 @@ PKGS=(
     'flameshot'
     'figlet'
     'openvpn'
+    'feh'
 )
 
 for PKG in "${PKGS[@]}"; do
